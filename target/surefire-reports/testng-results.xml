@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="5" total="7" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-13T16:57:01 IST" name="Suite" finished-at="2023-03-13T16:57:42 IST" duration-ms="40695">
+  <suite started-at="2023-03-14T13:46:31 IST" name="Suite" finished-at="2023-03-14T13:46:48 IST" duration-ms="16930">
     <groups>
     </groups>
-    <test started-at="2023-03-13T16:57:01 IST" name="ExchangeApp Test on CHROME" finished-at="2023-03-13T16:57:42 IST" duration-ms="40676">
+    <test started-at="2023-03-14T13:46:31 IST" name="ExchangeApp Test on CHROME" finished-at="2023-03-14T13:46:48 IST" duration-ms="16911">
       <class name="com.koinpro.testCases.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:01 IST" name="setUp" finished-at="2023-03-13T16:57:03 IST" duration-ms="2166" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:31 IST" name="setUp" finished-at="2023-03-14T13:46:35 IST" duration-ms="4232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_001()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:03 IST" name="TC_LoginTest_001" finished-at="2023-03-13T16:57:09 IST" duration-ms="5588" status="PASS">
+        <test-method signature="TC_LoginTest_001()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:35 IST" name="TC_LoginTest_001" finished-at="2023-03-14T13:46:41 IST" duration-ms="5358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LoginTest_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:09 IST" name="tearDown" finished-at="2023-03-13T16:57:09 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:41 IST" name="tearDown" finished-at="2023-03-14T13:46:41 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:09 IST" name="setUp" finished-at="2023-03-13T16:57:10 IST" duration-ms="1072" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:41 IST" name="setUp" finished-at="2023-03-14T13:46:42 IST" duration-ms="1131" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,118 +37,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_002()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:10 IST" name="TC_LoginTest_002" finished-at="2023-03-13T16:57:14 IST" duration-ms="4021" status="PASS">
+        <test-method signature="TC_LoginTest_002()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:42 IST" name="TC_LoginTest_002" finished-at="2023-03-14T13:46:47 IST" duration-ms="4846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_LoginTest_002 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:14 IST" name="tearDown" finished-at="2023-03-13T16:57:15 IST" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:15 IST" name="setUp" finished-at="2023-03-13T16:57:16 IST" duration-ms="1028" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_003()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:16 IST" name="TC_LoginTest_003" finished-at="2023-03-13T16:57:20 IST" duration-ms="4119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_LoginTest_003 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:20 IST" name="tearDown" finished-at="2023-03-13T16:57:20 IST" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:20 IST" name="setUp" finished-at="2023-03-13T16:57:21 IST" duration-ms="1011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_004()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:21 IST" name="TC_LoginTest_004" finished-at="2023-03-13T16:57:25 IST" duration-ms="4149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_LoginTest_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:25 IST" name="tearDown" finished-at="2023-03-13T16:57:25 IST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:25 IST" name="setUp" finished-at="2023-03-13T16:57:26 IST" duration-ms="1059" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_005()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:26 IST" name="TC_LoginTest_005" finished-at="2023-03-13T16:57:31 IST" duration-ms="5035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_LoginTest_005 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:31 IST" name="tearDown" finished-at="2023-03-13T16:57:31 IST" duration-ms="127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:31 IST" name="setUp" finished-at="2023-03-13T16:57:32 IST" duration-ms="1083" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_006()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:32 IST" name="TC_LoginTest_006" finished-at="2023-03-13T16:57:36 IST" duration-ms="4051" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_LoginTest_006 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:36 IST" name="tearDown" finished-at="2023-03-13T16:57:37 IST" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:37 IST" name="setUp" finished-at="2023-03-13T16:57:38 IST" duration-ms="1081" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_LoginTest_007()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:38 IST" name="TC_LoginTest_007" finished-at="2023-03-13T16:57:42 IST" duration-ms="4088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_LoginTest_007 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:42 IST" name="tearDown" finished-at="2023-03-13T16:57:42 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:47 IST" name="tearDown" finished-at="2023-03-14T13:46:48 IST" duration-ms="1107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.koinpro.testCases.LoginTest -->
     </test> <!-- ExchangeApp Test on CHROME -->
-    <test started-at="2023-03-13T16:57:42 IST" name="ExchangeApp Test on edge" finished-at="2023-03-13T16:57:42 IST" duration-ms="0">
+    <test started-at="2023-03-14T13:46:48 IST" name="ExchangeApp Test on edge" finished-at="2023-03-14T13:46:48 IST" duration-ms="1">
       <class name="com.koinpro.testCases.LoginTest">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:01 IST" name="BeforeSuite" finished-at="2023-03-13T16:57:01 IST" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:31 IST" name="BeforeSuite" finished-at="2023-03-14T13:46:31 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-13T16:57:42 IST" name="AfterSuite" finished-at="2023-03-13T16:57:42 IST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.koinpro.testCases.LoginTest@7a69b07]" started-at="2023-03-14T13:46:48 IST" name="AfterSuite" finished-at="2023-03-14T13:46:48 IST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->

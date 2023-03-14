@@ -24,18 +24,14 @@ public class LoginTest extends BaseClass {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);
 		lp.setUserName("msd916288@gmail.com");
-		lp.setPassword("abc@1234");
+		lp.setPassword("Abc@1234");
 		//		lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
-		System.out.println("login pass");
-		
-		
-
+	
 		if (driver.getPageSource().contains("Logged In Successfully.")) {
-			System.out.println("if");
-		
+			Assert.assertTrue(true);
 			XLUtils.setCellData(path, "LoginTest", 2, 6, "pass");
 		} else {
 			XLUtils.setCellData(path, "LoginTest", 2, 6, "failed");
@@ -48,7 +44,7 @@ public class LoginTest extends BaseClass {
 	}
 	
 
-	@Test(enabled=false)
+	@Test
 	public void TC_LoginTest_002() throws InterruptedException, IOException {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);

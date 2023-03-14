@@ -137,25 +137,28 @@ public class BaseClass {
 	@BeforeMethod
 	public void setUp(String br) {
 		if(br.toLowerCase().equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
-//			WebDriverManager.chromedriver().setup();
+//			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
+			WebDriverManager.chromedriver().setup();
 			options.addArguments("--remote-allow-origins=*");
 	        driver=new ChromeDriver(options);
+	        System.out.println("Chrome driver lounch successfully");
 	       
 	     }
 		else if(br.toLowerCase().equals("firefox")) {
 //			System.setProperty("webdriver.geco.driver",readconfig.)
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
+			System.out.println("firefox driver lounch successfully");
 			 
 		}
 		else if(br.toLowerCase().equals("edge")) {
 //			System.setProperty("webdriver.ie.driver",readconfig.)
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
+			System.out.println("edge driver lounch successfully");
 			 
        }
-		System.out.println("driver lounch successfully");
+		
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
