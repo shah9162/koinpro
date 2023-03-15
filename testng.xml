@@ -28,7 +28,7 @@
 		
 		
 		<test name="ExchangeApp Test on edge">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="firefox" />
 
 		<classes>
 
