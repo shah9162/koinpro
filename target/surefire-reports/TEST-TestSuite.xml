@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="12.705" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="15.738" tests="2" errors="0" skipped="0" failures="0">
   <properties>
+    <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
@@ -24,25 +25,23 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\apache-maven-3.9.0\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Users\Mayank Morya\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16967793818192890250.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\6.0\bin;C:\apache-maven-3.9.0\bin;C:\apache-maven-3.9.0\bin;;."/>
-    <property name="maven.conf" value="C:\apache-maven-3.9.0/conf"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\6.0\bin;C:\apache-maven-3.9.0\bin;C:\apache-maven-3.9.0\bin;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\apache-maven-3.9.0\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\Mayank Morya"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="file.encoding" value="Cp1252"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="17"/>
     <property name="user.name" value="Mayank Morya"/>
-    <property name="java.class.path" value="C:\apache-maven-3.9.0\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="C:\Users\Mayank Morya\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -50,16 +49,16 @@
     <property name="java.version" value="17.0.6"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
-    <property name="maven.home" value="C:\apache-maven-3.9.0"/>
+    <property name="maven.home" value="C:\Users\Mayank Morya\eclipse-workspace\koinpro\EMBEDDED"/>
+    <property name="style.color" value="always"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="m2e.build.project.data.socket.port" value="55623"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TC_LoginTest_001" classname="com.koinpro.testCases.LoginTest" time="7.557"/>
-  <testcase name="TC_LoginTest_002" classname="com.koinpro.testCases.LoginTest" time="5.148"/>
+  <testcase name="TC_LoginTest_001" classname="com.koinpro.testCases.LoginTest" time="11.264"/>
+  <testcase name="TC_LoginTest_002" classname="com.koinpro.testCases.LoginTest" time="4.474"/>
 </testsuite>

@@ -39,7 +39,7 @@ WebDriver ldriver;
 	@CacheLookup
 	WebElement Password;  
 	
-	@FindBy(xpath="//*[@class='form-check-label']")
+	@FindBy(xpath="(//input[@class='form-check-input ng-untouched ng-valid ng-dirty'])")
 	@CacheLookup
 	WebElement TermsAndCondition;
 	

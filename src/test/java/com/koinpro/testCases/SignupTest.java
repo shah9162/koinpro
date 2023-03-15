@@ -14,9 +14,12 @@ public class SignupTest extends BaseClass{
 		su.setEmail("test02528@gmail.com");
 		su.setMobile("9162889450");
 		su.setpassword("Abc@1234");
-	Thread.sleep(2000);
+		System.out.println("before term");
+//	Thread.sleep(2000);
 		su.clickTermndCondition();
+		System.out.println("after term");
 		su.clickSignUp();
+		System.out.println("signUp success");
 	}
 
 }

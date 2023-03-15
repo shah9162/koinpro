@@ -58,17 +58,9 @@ public class LoginPage {
 	
 	public void setPassword(String pwd) {
 		txtPassword.clear();
-		 String regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,20}$";
-		 Pattern pattern = Pattern.compile(regex);
-//		 Matcher matcher = pattern.matcher(password);
-		if(pattern.matcher(pwd) != null){
-			txtPassword.sendKeys(pwd);
-		}
-		else {
-			System.out.println("Wrong password format");
-		}
-		
+        txtPassword.sendKeys(pwd);	
 	}
+	  
 	
 	public void clicksignUp() {
 		btnLogin.click();
@@ -95,6 +87,8 @@ public class LoginPage {
 		actions.click(mainMenu).perform();
 		actions.moveToElement(logoutAll).click().perform();
 	}
+	
+
 	
 }
 

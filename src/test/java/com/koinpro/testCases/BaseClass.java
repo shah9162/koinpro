@@ -34,6 +34,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.jcraft.jsch.Logger;
 import com.koinpro.utilities.ExtentManager;
 import com.koinpro.utilities.ReadConfig;
 
@@ -142,6 +143,7 @@ public class BaseClass {
 			options.addArguments("--remote-allow-origins=*");
 	        driver=new ChromeDriver(options);
 	        System.out.println("Chrome driver lounch successfully");
+	     
 	       
 	     }
 		else if(br.toLowerCase().equals("firefox")) {

@@ -14,11 +14,12 @@
 
 		 <!--	<class name="com.koinpro.testCases.firstTest" />  -->
 
-			<!-- <class name="com.koinpro.testCases.basesclass" /> -->
+		<!-- <class name="com.koinpro.testCases.basesclass" /> -->
 
-		   <class name="com.koinpro.testCases.LoginTest" /> 
+		<!--   <class name="com.koinpro.testCases.LoginTest" /> -->
 
-			<!--  <class name="com.koinpro.testCases.SignupTest" />  -->
+		<!--   <class name="com.koinpro.testCases.SignupTest" />   -->
+		
 			</classes>
 		</test> 
 	
@@ -35,7 +36,7 @@
 
 			<!-- <class name="com.koinpro.testCases.basesclass" /> -->
 
-			 <!--      <class name="com.koinpro.testCases.LoginTest" />    --> 
+		     <class name="com.koinpro.testCases.LoginTest" />  
 
 			<!--  <class name="com.koinpro.testCases.SignupTest" />  -->
 
