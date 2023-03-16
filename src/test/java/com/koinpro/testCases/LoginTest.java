@@ -32,10 +32,8 @@ public class LoginTest extends BaseClass {
 	
 		if (driver.getPageSource().contains("Logged In Successfully.")) {
 			Assert.assertTrue(true);
-			XLUtils.setCellData(path, "LoginTest", 2, 6, "pass");
+			
 		} else {
-			XLUtils.setCellData(path, "LoginTest", 2, 6, "failed");
-		
 			Assert.assertTrue(false);
 		}
 	
@@ -56,16 +54,15 @@ public class LoginTest extends BaseClass {
 		Thread.sleep(2000);
 
 		if (driver.getPageSource().contains("Invalid Password")) {
-			XLUtils.setCellData(path, "LoginTest", 3, 6, "failed");
+			
 			Assert.assertTrue(true);
 		} else {
-			XLUtils.setCellData(path, "LoginTest", 3, 6, "pass");
-			Assert.assertTrue(false);
+		   Assert.assertTrue(false);
 		}
 
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void TC_LoginTest_003() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);
@@ -84,7 +81,7 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void TC_LoginTest_004() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);
@@ -103,7 +100,7 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void TC_LoginTest_005() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);
@@ -122,7 +119,7 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void TC_LoginTest_006() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);
@@ -141,7 +138,7 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void TC_LoginTest_007() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);

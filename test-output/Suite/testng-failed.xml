@@ -7,15 +7,15 @@
   <test thread-count="5" name="ExchangeApp Test on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.koinpro.testCases.SignupTest">
+      <class name="com.koinpro.testCases.ForgetPasswordTest">
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
-          <include name="TC_SignUpTest_001"/>
+          <include name="ForgetPassword_Test001"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.koinpro.testCases.SignupTest -->
+      </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
     </classes>
   </test> <!-- ExchangeApp Test on CHROME(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-14T18:52:08 IST" name="Suite" finished-at="2023-03-14T18:52:20 IST" duration-ms="11989">
+  <suite started-at="2023-03-16T18:20:41 IST" name="Suite" finished-at="2023-03-16T18:21:15 IST" duration-ms="34167">
     <groups>
     </groups>
-    <test started-at="2023-03-14T18:52:08 IST" name="ExchangeApp Test on CHROME" finished-at="2023-03-14T18:52:20 IST" duration-ms="11956">
-      <class name="com.koinpro.testCases.SignupTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.SignupTest@2de23121]" started-at="2023-03-14T18:52:08 IST" name="setUp" finished-at="2023-03-14T18:52:12 IST" duration-ms="3446" status="PASS">
+    <test started-at="2023-03-16T18:20:41 IST" name="ExchangeApp Test on CHROME" finished-at="2023-03-16T18:21:15 IST" duration-ms="34140">
+      <class name="com.koinpro.testCases.ForgetPasswordTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:41 IST" name="setUp" finished-at="2023-03-16T18:20:44 IST" duration-ms="2551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,50 +18,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_SignUpTest_001()[pri:0, instance:com.koinpro.testCases.SignupTest@2de23121]" started-at="2023-03-14T18:52:12 IST" name="TC_SignUpTest_001" finished-at="2023-03-14T18:52:20 IST" duration-ms="8353" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="ForgetPassword_Test001()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:44 IST" name="ForgetPassword_Test001" finished-at="2023-03-16T18:20:52 IST" duration-ms="8338" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='form-check-input ng-untouched ng-valid ng-dirty'])"}
-  (Session info: chrome=111.0.5563.65)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c2e16a1ccdde3a2f08a73d9aa956202, findElement {using=xpath, value=(//input[@class='form-check-input ng-untouched ng-valid ng-dirty'])}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56133/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c2e16a1ccdde3a2f08a73d9aa956202]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='form-check-input ng-untouched ng-valid ng-dirty'])"}
-  (Session info: chrome=111.0.5563.65)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3c2e16a1ccdde3a2f08a73d9aa956202, findElement {using=xpath, value=(//input[@class='form-check-input ng-untouched ng-valid ng-dirty'])}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56133/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c2e16a1ccdde3a2f08a73d9aa956202
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-at com.koinpro.pageObjects.SignUp.clickTermndCondition(SignUp.java:79)
-at com.koinpro.testCases.SignupTest.TC_SignUpTest_001(SignupTest.java:19)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test001(ForgetPasswordTest.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,27 +60,103 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_SignUpTest_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.SignupTest@2de23121]" started-at="2023-03-14T18:52:20 IST" name="tearDown" finished-at="2023-03-14T18:52:20 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- ForgetPassword_Test001 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:52 IST" name="tearDown" finished-at="2023-03-16T18:20:52 IST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.koinpro.testCases.SignupTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:52 IST" name="setUp" finished-at="2023-03-16T18:20:53 IST" duration-ms="1047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ForgetPassword_Test002_Timecheck()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:53 IST" name="ForgetPassword_Test002_Timecheck" finished-at="2023-03-16T18:20:58 IST" duration-ms="4710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgetPassword_Test002_Timecheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:58 IST" name="tearDown" finished-at="2023-03-16T18:20:58 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:58 IST" name="setUp" finished-at="2023-03-16T18:20:59 IST" duration-ms="1053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ForgetPassword_Test003_NoUser()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:59 IST" name="ForgetPassword_Test003_NoUser" finished-at="2023-03-16T18:21:04 IST" duration-ms="4359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgetPassword_Test003_NoUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:04 IST" name="tearDown" finished-at="2023-03-16T18:21:04 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:04 IST" name="setUp" finished-at="2023-03-16T18:21:05 IST" duration-ms="1414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ForgetPassword_Test004_invalid_Email_Format()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:05 IST" name="ForgetPassword_Test004_invalid_Email_Format" finished-at="2023-03-16T18:21:09 IST" duration-ms="4193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgetPassword_Test004_invalid_Email_Format -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:09 IST" name="tearDown" finished-at="2023-03-16T18:21:10 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:10 IST" name="setUp" finished-at="2023-03-16T18:21:11 IST" duration-ms="1076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ForgetPassword_Test005_ResendLink()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:11 IST" name="ForgetPassword_Test005_ResendLink" finished-at="2023-03-16T18:21:15 IST" duration-ms="4269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgetPassword_Test005_ResendLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:15 IST" name="tearDown" finished-at="2023-03-16T18:21:15 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
     </test> <!-- ExchangeApp Test on CHROME -->
-    <test started-at="2023-03-14T18:52:20 IST" name="ExchangeApp Test on edge" finished-at="2023-03-14T18:52:20 IST" duration-ms="1">
-      <class name="com.koinpro.testCases.SignupTest">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.koinpro.testCases.SignupTest@2de23121]" started-at="2023-03-14T18:52:08 IST" name="BeforeSuite" finished-at="2023-03-14T18:52:08 IST" duration-ms="698" status="PASS">
+    <test started-at="2023-03-16T18:21:15 IST" name="ExchangeApp Test on edge" finished-at="2023-03-16T18:21:15 IST" duration-ms="1">
+      <class name="com.koinpro.testCases.ForgetPasswordTest">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:20:40 IST" name="BeforeSuite" finished-at="2023-03-16T18:20:41 IST" duration-ms="640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.koinpro.testCases.SignupTest@2de23121]" started-at="2023-03-14T18:52:20 IST" name="AfterSuite" finished-at="2023-03-14T18:52:21 IST" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.koinpro.testCases.ForgetPasswordTest@305b7c14]" started-at="2023-03-16T18:21:15 IST" name="AfterSuite" finished-at="2023-03-16T18:21:16 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
-      </class> <!-- com.koinpro.testCases.SignupTest -->
+      </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
     </test> <!-- ExchangeApp Test on edge -->
   </suite> <!-- Suite -->
 </testng-results>
