@@ -14,7 +14,6 @@
           <include name="ForgetPassword_Test001"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="ForgetPassword_Test005_ResendLink"/>
         </methods>
       </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
     </classes>

@@ -3,10 +3,12 @@ import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -17,7 +19,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
@@ -52,6 +56,59 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static ChromeOptions options = new ChromeOptions();
 
+	
+	public String randomEmail() {
+		String generatedString= RandomStringUtils.randomAlphabetic(4);
+		String generatedint= RandomStringUtils.randomNumeric(4);
+		String Email = generatedString+generatedint+"@yopmail.com";
+		System.out.println("generated Email is :"+Email);
+		return Email;
+	};
+	
+	public void RegisterUser(String str) throws InterruptedException {
+		driver.get("https://polobix.com/portal/auth/signUp");
+		 driver.findElement(By.id("register-username")).sendKeys("test");
+	 		driver.findElement(By.id("register-email")).sendKeys(str);
+	 		driver.findElement(By.id("register-mobile")).sendKeys("9162556410");
+	 		driver.findElement(By.id("register-password")).sendKeys("Abc@1234");
+	 		driver.findElement(By.id("register-privacy-policy")).click();
+	 		driver.findElement(By.xpath("//button[@class='btn btn-primary w-100']")).click();
+	 		Thread.sleep(2000);
+		
+		if(driver.getPageSource().contains("Thanks for signing up, verify your E-Mail,")) {
+			System.out.println("signUp successfully");
+		}
+		else {
+			System.out.println("signUp failed");
+		}
+	};
+	
+	public void verify_Newly_AddedCustomer(String str) throws InterruptedException {
+	    driver.navigate().to("https://yopmail.com/") ;
+        WebElement emailbox= driver.findElement(By.id("login"));
+        emailbox.sendKeys(str);
+        emailbox.submit();
+        Thread.sleep(3000);
+      int size = driver.findElements(By.tagName("iframe")).size();
+       System.out.println("total frame : "+size);
+     
+      driver.switchTo().frame(2);
+      WebElement link= driver.findElement(By.linkText("Click here"));
+      if(link.isEnabled()) {
+    	  System.out.println("emai verification success");
+      }
+      else {
+    	  System.out.println("emai verification failed");
+      }
+
+        // wait until the title of the page contains the specified text
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Click here")));
+        
+        link.click();
+        Thread.sleep(4000);
+	};
+	
 	
 	
 	public boolean isAlertPresent() {  //user defined method created to check alert present or not
@@ -190,15 +247,13 @@ public static String Screenshot(WebDriver driver,String login) {
 		} catch(Exception e) {
 			e.getMessage();
 		}
-		
 		return destination;
-		
 	}
 
-public static String exactdate() {
-	Date currentdate = new Date();
-	String exactdateDate = currentdate.toString().replace(" ","-").replace(":","-");
-	return exactdateDate;
+    public static String exactdate() {
+	   Date currentdate = new Date();
+	   String exactdateDate = currentdate.toString().replace(" ","-").replace(":","-");
+	   return exactdateDate;
 }
 	
 

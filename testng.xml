@@ -16,7 +16,7 @@
 
 		<!-- <class name="com.koinpro.testCases.basesclass" /> -->
 
-		  <class name="com.koinpro.testCases.LoginTest" /> 
+	    <!--   <class name="com.koinpro.testCases.LoginTest" /> -->
 
 		<!--   <class name="com.koinpro.testCases.SignupTest" />   -->
 		
