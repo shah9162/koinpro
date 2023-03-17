@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -29,10 +31,9 @@ public class ForgetPasswordTest extends BaseClass{
 		
 		//email Verification 
 		verify_Newly_AddedCustomer(email);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		driver.switchTo().defaultContent();
+		 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		Thread.sleep(2000);
+
 		driver.navigate().to(baseURL);
 		Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -54,20 +55,29 @@ public class ForgetPasswordTest extends BaseClass{
 			System.out.println("link sent on registered mail id");
 		}
 		
-		driver.navigate().to("https://yopmail.com/");
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--incognito");
+//		options.addArguments("--remote-allow-origins=*");
+//		ChromeDriver Indriver = new ChromeDriver(options);
+		
+		driver.get("https://yopmail.com/");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		 WebElement emailbox= driver.findElement(By.id("login"));
 	        emailbox.sendKeys(email);
 	        emailbox.submit();
-	        Thread.sleep(3000);
+	        
+//	        WebDriverWait waitex = new WebDriverWait(driver,Duration.ofSeconds(60,000));
+//			waitex.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Reset My Password']")));
+	        try {
+	            Thread.sleep(20000); // 120,000 milliseconds = 2 minutes
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 	        int size = driver.findElements(By.tagName("iframe")).size();
 	        System.out.println("total frame : "+size);
 	      
-	       driver.switchTo().frame(2);
-	       
-	   List<WebElement> links=    driver.findElements(By.tagName("a"));
-	   System.out.println(links.size());
-	       
+	        driver.switchTo().frame(2);
+	      
 	       WebElement link= driver.findElement(By.xpath("//a[normalize-space()='Reset My Password']"));
 	       if(link.isEnabled()) {
 	     	  System.out.println("forget password link is opening");
@@ -76,16 +86,14 @@ public class ForgetPasswordTest extends BaseClass{
 	     	  System.out.println("there is problem with forget password link");
 	       }
 
-	         // wait until the title of the page contains the specified text
-	         WebDriverWait Exwait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	         Exwait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Reset My Password")));
-	         
 	         link.click();
-	         Thread.sleep(2000);
+	         Thread.sleep(3000);
+//	      String newurl=   driver.getCurrentUrl();
+//	      driver.navigate().to(newurl);
 	         
 	         //Enter new password 
-	         driver.findElement(By.id("password")).sendKeys("Abc@12345");
-	         driver.findElement(By.id("confirm_password")).sendKeys("Abc@12345");
+	         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Abc@12345");
+	         driver.findElement(By.xpath("//input[@placeholder='Confirm Password']")).sendKeys("Abc@12345");
 	         driver.findElement(By.xpath("//button[@class='btn btn-block btn-primary btn-lg']")).click();
 	         Thread.sleep(2000);
 	         if(driver.getPageSource().contains("Password Reset")) {
@@ -95,8 +103,14 @@ public class ForgetPasswordTest extends BaseClass{
 	        	 System.out.println("password reset failed");
 	         }
 	         
+	         String windows= driver.getWindowHandle();
+	         System.out.println("window handle value"+windows);
+	          if(driver.switchTo().window(windows).getTitle().contains("ifmail")) {
+	          	driver.close();
+	          }
+	         
 	         //Again login to the Account with new password
-	         driver.navigate().to(baseURL);
+	         driver.get(baseURL);
 	         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	         LoginPage lp = new LoginPage(driver);
 	 		driver.get(baseURL);

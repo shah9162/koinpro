@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="40.735" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="51.611" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Mayank Morya\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf13157307678753874165.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Mayank Morya\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14712217610462107319.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\6.0\bin;C:\apache-maven-3.9.0\bin;C:\apache-maven-3.9.0\bin;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,19 +56,19 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="m2e.build.project.data.socket.port" value="50484"/>
+    <property name="m2e.build.project.data.socket.port" value="62368"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="ForgetPassword_Test001" classname="com.koinpro.testCases.ForgetPasswordTest" time="40.735">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Reset My Password&apos;]&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c2fec5a959effacc39bcf353ce4d92b6, findElement {using=xpath, value=//a[normalize-space()=&apos;Reset My Password&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50495/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2fec5a959effacc39bcf353ce4d92b6" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Reset My Password']"}
+  <testcase name="ForgetPassword_Test001" classname="com.koinpro.testCases.ForgetPasswordTest" time="51.611">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Password&apos;]&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8d56db6a5d0f9855556b452269b6507c, findElement {using=xpath, value=//input[@placeholder=&apos;Password&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62376}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62376/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8d56db6a5d0f9855556b452269b6507c" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Password']"}
   (Session info: chrome=111.0.5563.65)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c2fec5a959effacc39bcf353ce4d92b6, findElement {using=xpath, value=//a[normalize-space()='Reset My Password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50495/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2fec5a959effacc39bcf353ce4d92b6
+Command: [8d56db6a5d0f9855556b452269b6507c, findElement {using=xpath, value=//input[@placeholder='Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62376}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62376/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d56db6a5d0f9855556b452269b6507c
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -85,23 +85,24 @@ Session ID: c2fec5a959effacc39bcf353ce4d92b6
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test001(ForgetPasswordTest.java:71)
+	at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test001(ForgetPasswordTest.java:95)
 </failure>
-    <system-out><![CDATA[generated Email is :DZtU5703@yopmail.com
+    <system-out><![CDATA[generated Email is :VXXM2170@yopmail.com
 Chrome driver lounch successfully
 signUp successfully
 total frame : 3
 emai verification success
+window handle value7BB53E7B5B61213B3DD2E8C723B4082C
 link sent on registered mail id
 total frame : 3
-0
+forget password link is opening
 ]]></system-out>
     <system-err><![CDATA[ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 3317
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 1098
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 17, 2023 3:00:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 17, 2023 6:51:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>

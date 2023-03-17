@@ -106,7 +106,13 @@ public class BaseClass {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Click here")));
         
         link.click();
-        Thread.sleep(4000);
+        
+       String windows= driver.getWindowHandle();
+       System.out.println("window handle value"+windows);
+        if(driver.switchTo().window(windows).getTitle().contains("ifmail")) {
+        	driver.close();
+        }
+        Thread.sleep(1000);
 	};
 	
 	
@@ -254,7 +260,5 @@ public static String Screenshot(WebDriver driver,String login) {
 	   Date currentdate = new Date();
 	   String exactdateDate = currentdate.toString().replace(" ","-").replace(":","-");
 	   return exactdateDate;
-}
-	
-
-}
+	   }
+	}
